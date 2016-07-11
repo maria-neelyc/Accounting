@@ -1,0 +1,625 @@
+Version =20
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    TabularFamily =0
+    BorderStyle =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =8175
+    DatasheetFontHeight =10
+    ItemSuffix =20
+    Left =1605
+    Top =660
+    Right =11010
+    Bottom =6975
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xd38dd8be7d7ae340
+    End
+    RecordSource ="SELECT tblVat.vatID, tblVat.vatName, tblVat.vatRate, tblVat.vatStartDate, tblVat"
+        ".vatEndDate, tblVat.vatInput, tblVat.vatOutput FROM tblVat ORDER BY tblVat.vatID"
+        "; "
+    Caption ="V.A.T."
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa4050000a2050000a2050000a205000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+        End
+        Begin CommandButton
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+        End
+        Begin ToggleButton
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+        End
+        Begin FormHeader
+            Height =1299
+            BackColor =-2147483633
+            Name ="FormHeader"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =240
+                    Top =1020
+                    Width =2280
+                    Height =225
+                    ForeColor =128
+                    Name ="crnShortName_Label"
+                    Caption ="ShortName"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3685
+                    Top =1039
+                    Width =945
+                    Height =225
+                    ForeColor =128
+                    Name ="crnName_Label"
+                    Caption ="Start Date"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4818
+                    Top =1015
+                    Width =945
+                    Height =225
+                    ForeColor =128
+                    Name ="crnExchangeRate_Label"
+                    Caption ="End Date"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =238
+                    Left =255
+                    Top =120
+                    Width =4380
+                    Height =420
+                    FontSize =14
+                    FontWeight =700
+                    Name ="lblComent"
+                    Caption ="VAT Definitions"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =6315
+                    Top =600
+                    Width =1440
+                    Height =240
+                    FontWeight =700
+                    Name ="lblPos"
+                    Caption ="Rec. New"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListWidth =3715
+                    Left =1140
+                    Top =600
+                    Width =2880
+                    Height =300
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"20\""
+                    Name ="cboFind"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblVat.vatID, tblVat.vatName, tblVat.vatStartDate, tblVat.vatEndDate FROM"
+                        " tblVat ORDER BY tblVat.vatID; "
+                    ColumnWidths ="0;1441;1134;1134"
+                    AfterUpdate ="[Event Procedure]"
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2645
+                    Top =1039
+                    Width =945
+                    Height =225
+                    ForeColor =128
+                    Name ="Label12"
+                    Caption ="Rate"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5880
+                    Top =1020
+                    Width =945
+                    Height =225
+                    ForeColor =128
+                    Name ="Label17"
+                    Caption ="Input Acc."
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =7020
+                    Top =1020
+                    Width =945
+                    Height =225
+                    ForeColor =128
+                    Name ="Label18"
+                    Caption ="Output Acc."
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =255
+                    Top =600
+                    Width =810
+                    Height =300
+                    Name ="Label19"
+                    Caption ="Search"
+                End
+            End
+        End
+        Begin Section
+            Height =401
+            BackColor =-2147483633
+            Name ="Detail"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    TextFontCharSet =161
+                    IMESentenceMode =3
+                    Left =240
+                    Top =60
+                    Width =2280
+                    Height =255
+                    ColumnWidth =465
+                    Name ="vatName"
+                    ControlSource ="vatName"
+                    FontName ="Arial Greek"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3708
+                    Top =47
+                    Width =975
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="vatStartDate"
+                    ControlSource ="vatStartDate"
+                    Format ="Short Date"
+                    InputMask ="0000/00/00;0;_"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4834
+                    Top =47
+                    Width =975
+                    Height =255
+                    ColumnWidth =1035
+                    TabIndex =3
+                    Name ="vatEndDate"
+                    ControlSource ="vatEndDate"
+                    Format ="Short Date"
+                    InputMask ="0000/00/00;0;_"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Width =240
+                    TabIndex =4
+                    Name ="vatID"
+                    ControlSource ="vatID"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2668
+                    Top =47
+                    Width =975
+                    Height =255
+                    TabIndex =1
+                    Name ="vatRate"
+                    ControlSource ="vatRate"
+                    Format ="Standard"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =2445
+                    Left =5880
+                    Top =45
+                    Width =1050
+                    TabIndex =5
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    Name ="vatInput"
+                    ControlSource ="vatInput"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAccount.accID, tblAccount.accNo, tblAccount.accName, tblAccount.accIsV"
+                        "at FROM tblAccount WHERE (((tblAccount.accIsVat)=True)) ORDER BY tblAccount.accN"
+                        "o, tblAccount.accName; UNION ALL SELECT 0 AS accID, 0 AS accNo, \"Not VAT able\""
+                        " AS accName, -1 AS accIsVat FROM tblControl ORDER BY tblAccount.accNo, tblAccoun"
+                        "t.accName;"
+                    ColumnWidths ="0;1005;1440"
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =2445
+                    Left =7020
+                    Top =45
+                    Width =1050
+                    TabIndex =6
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    Name ="vatOutput"
+                    ControlSource ="vatOutput"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAccount.accID, tblAccount.accNo, tblAccount.accName, tblAccount.accIsV"
+                        "at FROM tblAccount WHERE (((tblAccount.accIsVat)=True)) ORDER BY tblAccount.accN"
+                        "o, tblAccount.accName; UNION ALL SELECT 0 AS accID, 0 AS accNo, \"Not VAT able\""
+                        " AS accName, -1 AS accIsVat FROM tblControl ORDER BY tblAccount.accNo, tblAccoun"
+                        "t.accName;"
+                    ColumnWidths ="0;1006;1441"
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    AccessKey =77
+                    Left =240
+                    Top =240
+                    Width =366
+                    Name ="cmdFirst"
+                    Caption ="&m"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadaddada44dadad1dadaadad44adad11adaddada44dad111dada ,
+                        0xadad44ad1111adaddada44d11111dadaadad44ad1111adaddada44dad111dada ,
+                        0xadad44adad11adaddada44dadad1dadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="First Record (Alt+M)"
+                    UnicodeAccessKey =109
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    AccessKey =47
+                    Left =1500
+                    Top =240
+                    Width =366
+                    TabIndex =1
+                    Name ="cmdLast"
+                    Caption ="&/"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadaddadad1dadad44adaadada11dada44daddadad111dad44ada ,
+                        0xadada1111da44daddadad11111d44adaadada1111da44daddadad111dad44ada ,
+                        0xadada11dada44daddadad1dadad44adaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Last Record (Alt+/)"
+                    UnicodeAccessKey =47
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    AccessKey =46
+                    Left =1080
+                    Top =240
+                    Width =366
+                    TabIndex =2
+                    Name ="cmdNext"
+                    Caption ="&."
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadaddadada1adadadadaadadad11adadadaddadada111adadada ,
+                        0xadadad1111adadaddadada11111adadaadadad1111adadaddadada111adadada ,
+                        0xadadad11adadadaddadada1adadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Next Record (Alt+.)"
+                    UnicodeAccessKey =46
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    AccessKey =44
+                    Left =660
+                    Top =240
+                    Width =366
+                    TabIndex =3
+                    Name ="cmdPrevious"
+                    Caption ="&,"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadaddadadadad1dadadaadadadad11adadaddadadad111dadada ,
+                        0xadadad1111adadaddadad11111dadadaadadad1111adadaddadadad111dadada ,
+                        0xadadadad11adadaddadadadad1dadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Previous Record (Alt+,)"
+                    UnicodeAccessKey =44
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =78
+                    Left =3435
+                    Top =240
+                    Width =1080
+                    TabIndex =4
+                    Name ="cmdAdd"
+                    Caption ="Add &New"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Add New Record (ALT+N)"
+                    UnicodeAccessKey =78
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =68
+                    Left =4635
+                    Top =240
+                    Width =1080
+                    TabIndex =5
+                    Name ="cmdDel"
+                    Caption ="&Delete"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Delete Record (ALT+D)"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    AccessKey =88
+                    Left =5835
+                    Top =240
+                    Width =1080
+                    TabIndex =6
+                    Name ="cmdExit"
+                    Caption ="E&xit"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Close Current Form (ALT+X)"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Private Sub cboFind_AfterUpdate()
+On Error GoTo Err_End
+' Find the record that matches the control.
+If IsNoData(cboFind.Value) = False Then
+    Me.Requery
+    Me.RecordsetClone.FindFirst "[vatID] = " & Me![cboFind]
+    Me.Bookmark = Me.RecordsetClone.Bookmark
+End If
+Exit Sub
+Err_End:
+        Dim strMsg As String
+        strMsg = FnIsErr(Err.Number)
+        If strMsg <> "" Or IsNull(strMsg) Or IsEmpty(strMsg) Then
+            MsgBox strMsg, vbExclamation, "Error!"
+        Else
+        End If
+        cboFind.Value = ""
+End Sub
+Private Sub cmdFirst_Click()
+On Error GoTo Err_cmdFirst_Click
+    DoCmd.GoToRecord , , acFirst
+Exit_cmdFirst_Click:
+    Exit Sub
+Err_cmdFirst_Click:
+    If Err.Number = 13 Then GoTo Exit_cmdFirst_Click
+    MsgBox FnIsErr(Err.Number), vbExclamation
+    Resume Exit_cmdFirst_Click
+End Sub
+
+
+Private Sub cmdLast_Click()
+On Error GoTo Err_cmdLast_Click
+    DoCmd.GoToRecord , , acLast
+Exit_cmdLast_Click:
+    Exit Sub
+Err_cmdLast_Click:
+    If Err.Number = 13 Then GoTo Exit_cmdLast_Click
+    MsgBox FnIsErr(Err.Number), vbExclamation
+    Resume Exit_cmdLast_Click
+End Sub
+Private Sub cmdNext_Click()
+On Error GoTo Err_cmdNext_Click
+    DoCmd.GoToRecord , , acNext
+Exit_cmdNext_Click:
+    Exit Sub
+Err_cmdNext_Click:
+    Select Case Err.Number
+    Case 13
+    Case 2105
+        Beep
+    Case Else
+        MsgBox FnIsErr(Err.Number), vbExclamation
+    End Select
+    Resume Exit_cmdNext_Click
+End Sub
+Private Sub cmdPrevious_Click()
+On Error GoTo Err_cmdPrevious_Click
+    DoCmd.GoToRecord , , acPrevious
+Exit_cmdPrevious_Click:
+    Exit Sub
+Err_cmdPrevious_Click:
+    Select Case Err.Number
+    Case 13
+    Case 2105
+        Beep
+    Case Else
+        MsgBox FnIsErr(Err.Number), vbExclamation
+    End Select
+    Resume Exit_cmdPrevious_Click
+End Sub
+Private Sub cmdAdd_Click()
+On Error GoTo Err_cmdAdd_Click
+  Me.AllowAdditions = True
+  DoCmd.GoToRecord , , acNewRec
+  vatName.SetFocus
+Exit_cmdAdd_Click:
+    Exit Sub
+Err_cmdAdd_Click:
+    MsgBox FnIsErr(Err.Number), vbExclamation
+    Resume Exit_cmdAdd_Click
+End Sub
+Private Sub cmdDel_Click()
+On Error GoTo Err_cmdDel_Click
+    DoCmd.SetWarnings False
+    If MsgBox("Delete Record? YES or NO?", vbYesNo, "Warning!") = vbYes Then
+        DoCmd.DoMenuItem acFormBar, acEditMenu, 8, , acMenuVer70
+        DoCmd.DoMenuItem acFormBar, acEditMenu, 6, , acMenuVer70
+        vatName.SetFocus
+    Else
+        Exit Sub
+    End If
+    DoCmd.SetWarnings True
+Exit_cmdDel_Click:
+    Exit Sub
+Err_cmdDel_Click:
+    MsgBox FnIsErr(Err.Number), vbExclamation
+    Resume Exit_cmdDel_Click
+End Sub
+Private Sub cmdExit_Click()
+If IsNoData(Me.OpenArgs) Then
+    DoCmd.OpenForm "frmMain"
+    DoCmd.Close acForm, Me.name
+Else
+    Select Case Me.OpenArgs
+        Case "frmTransactionSub"
+            DoCmd.Close acForm, "frmVat"
+            Screen.ActiveForm.Refresh
+        Case Else
+    End Select
+End If
+End Sub
+Private Sub Form_Current()
+' Purpose: Show current record position
+If Me.NewRecord Then
+    Me!lblPos.Caption = "Rec. New"
+Else
+    Me.RecordsetClone.Bookmark = Me.Bookmark
+    Me!lblPos.Caption = "Rec. " & CStr(Me.RecordsetClone.AbsolutePosition + 1) _
+                        & " of " & CStr(Me.RecordsetClone.RecordCount)
+End If
+cboFind.Requery
+End Sub

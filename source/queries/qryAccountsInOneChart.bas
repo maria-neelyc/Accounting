@@ -1,0 +1,15 @@
+dbMemo "SQL" ="SELECT tblAccount.accNo, tblAccount.accName, tblChart.coaName AS Chart\015\012FR"
+    "OM tblChart INNER JOIN tblAccount ON tblChart.coaID = tblAccount.caoID\015\012WH"
+    "ERE coaID IN (SELECT coaID\015\012FROM tblChart INNER JOIN tblAccount ON tblChar"
+    "t.coaID = tblAccount.caoID\015\012GROUP BY coaID\015\012HAVING Count(tblAccount."
+    "caoID) > 1);\015\012"
+dbMemo "Connect" =""
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "OrderByOn" ="0"
+dbByte "Orientation" ="0"
+dbByte "DefaultView" ="2"
+dbBoolean "FilterOnLoad" ="0"
+dbBoolean "OrderByOnLoad" ="-1"
+Begin
+End
